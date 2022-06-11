@@ -1,0 +1,20 @@
+rootProject.name = 'ms-Clients'
+
+include ':application'
+project(':application').projectDir = file('./application/clients_manager_app')
+
+include ':models'
+project(':models').projectDir = file('./domain/models')
+
+include ':usecases'
+project(':usecases').projectDir = file('./domain/usecases/')
+
+include ':common_services'
+project(':common_services').projectDir = file('./infrastructure/helpers/common_services')
+
+include ':persistence_component'
+project(':persistence_component').projectDir = file('./infrastructure/output/persistence_component')
+
+include ':rest_controller'
+project(':rest_controller').projectDir = file('./infrastructure/input/rest_controller')
+
